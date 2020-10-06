@@ -52,7 +52,9 @@
                 "kms:Decrypt",
                 "lambda:CreateFunction",
                 "lambda:DeleteFunction",
+                "lambda:GetFunction",
                 "lambda:GetFunctionConfiguration",
+                "lambda:InvokeFunction",
                 "lambda:RemovePermission",
                 "logs:DeleteSubscriptionFilter",
                 "logs:DescribeLogGroups",
@@ -93,6 +95,7 @@
                 "iam:DetachRolePolicy",
                 "iam:GetAccessKeyLastUsed",
                 "iam:GetRole",
+                "iam:GetRolePolicy",
                 "iam:GetUser",
                 "iam:ListAccessKeys",
                 "iam:PassRole",
@@ -127,7 +130,7 @@
                 "arn:aws:s3:::grandcentral*",
                 "arn:aws:s3:::trumpet-splunk-prod*",
                 "arn:aws:sns:*:*:grandcentral*",
-                "arn:aws:sqs:*:*:grandcentral*"    
+                "arn:aws:sqs:*:*:grandcentral*"
             ]
         },
         {
@@ -148,7 +151,7 @@
                 "s3:GetObjectAcl",
                 "s3:GetObject",
                 "s3:ListBucket",
-                "s3:PutBucketVersioning"              
+                "s3:PutBucketVersioning"
             ],
             "Resource": [
                 "arn:aws:s3:::grandcentral*",
