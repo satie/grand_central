@@ -189,6 +189,15 @@
                 "arn:aws:cloudformation:*:*:stack/grandcentral*/*",
                 "arn:aws:cloudformation:*:*:stackset/*:grandcentral*"
             ]
+        },
+        {
+            "Sid": "Inspector",
+            "Effect": "Allow",
+            "Action": [
+                "inspector:Describe*",
+                "inspector:List*"
+            ],
+            "Resource": "*"
         }
     ]
 }
