@@ -26,6 +26,7 @@
                 "cloudwatch:PutMetricData",
                 "config:DeliverConfigSnapshot",
                 "config:GetComplianceSummaryByConfigRule",
+                "config:DescribeConfigRules",
                 "ec2:DescribeAddresses",
                 "ec2:DescribeImages",
                 "ec2:DescribeInstances",
@@ -196,6 +197,17 @@
             "Action": [
                 "inspector:Describe*",
                 "inspector:List*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "ELB",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetObject",
+                "s3:ListAllMyBuckets",
+                "kms:Decrypt"
             ],
             "Resource": "*"
         }
